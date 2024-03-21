@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { navLinks } from "../constants";
+import MenuSvg from "./design/MenuSvg";
 import headerLogo from "../assets/images/header-logo.svg";
-import { hamburger } from "../assets/icons";
-// import MyPopover from "./MyPopover";
+// import { hamburger } from "../assets/icons";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -10,7 +10,7 @@ const Nav = () => {
   console.log(open);
 
   const handleToggleMenu = () => {
-    console.log(setOpen((open) => !open));
+    setOpen((open) => !open);
   }
 
   return (
@@ -40,7 +40,7 @@ const Nav = () => {
         </ul>
 
         <div role="button" onClick={handleToggleMenu} className="hidden max-lg:block">
-          <img src={hamburger} width={25} height={25} alt="Burger menu" />
+          <MenuSvg/>
         </div>
       </nav>
     </header>
