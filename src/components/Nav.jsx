@@ -1,8 +1,18 @@
+import { useState } from "react";
 import { navLinks } from "../constants";
 import headerLogo from "../assets/images/header-logo.svg";
-import MyPopover from "./MyPopover";
+import { hamburger } from "../assets/icons";
+// import MyPopover from "./MyPopover";
 
 const Nav = () => {
+  const [open, setOpen] = useState(false);
+
+  console.log(open);
+
+  const handleToggleMenu = () => {
+    console.log(setOpen((open) => !open));
+  }
+
   return (
     <header className="padding-x py-8 absolute z-10 w-full">
       <nav className="flex justify-between items-center max-container">
@@ -29,8 +39,8 @@ const Nav = () => {
           ))}
         </ul>
 
-        <div role="button" className="hidden max-lg:block">
-          <MyPopover/>
+        <div role="button" onClick={handleToggleMenu} className="hidden max-lg:block">
+          <img src={hamburger} width={25} height={25} alt="Burger menu" />
         </div>
       </nav>
     </header>

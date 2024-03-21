@@ -23,7 +23,7 @@ const Footer = () => {
           <div className='flex items-center gap-5 mt-8'>
             {socialMedia.map((icon) => (
               <div
-                className='flex justify-center items-center w-12 h-12 bg-white rounded-full'
+                className='flex justify-center items-center w-12 h-12 bg-white hover:bg-slate-200 cursor-pointer rounded-full'
                 key={icon.alt}
               >
                 <img src={icon.src} alt={icon.alt} width={24} height={24} />
@@ -62,9 +62,9 @@ const Footer = () => {
             height={20}
             className='rounded-full m-0'
           />
-          <p>Copyright. All rights reserved.</p>
+          <p className="hover:text-slate-gray">Copyright. All rights reserved.</p>
         </div>
-        <p className='font-montserrat cursor-pointer'>Terms & Conditions</p>
+        <p className='font-montserrat hover:text-slate-gray cursor-pointer'>Terms & Conditions</p>
       </div>
     </footer>
   )
