@@ -6,8 +6,8 @@ const Button = ({ label, iconURL, backgroundColor,
       className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none
       ${
         backgroundColor
-          ? `${backgroundColor} ${textColor} ${borderColor}`
-          : "bg-purple-500 text-white border-purple-500"
+          ? `${backgroundColor} hover:border-purple-500 hover:text-purple-500 ${textColor} ${borderColor}`
+          : "bg-purple-500 text-white border-purple-500 hover:bg-purple-700"
       } rounded-full ${fullWidth && "w-full"}`}
     >
       {label}

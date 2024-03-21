@@ -8,7 +8,7 @@ function MyPopover() {
         <img src={hamburger} width={25} height={25} alt="Burger menu" />
       </Popover.Button>
 
-      <Popover.Panel className="absolute z-40 right-1 min-w-72 px-4 py-4 ring-2 ring-purple-500 ring-offset-4 rounded">
+      <Popover.Panel className="absolute z-40 top-7 right-1 min-w-72 px-4 py-4 ring-2 ring-purple-500 bg-white rounded">
         <div className="grid gap-2">
           <a href="#Home">Home</a>
           <a href="#about-us">About Us</a>
