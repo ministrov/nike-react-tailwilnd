@@ -8,8 +8,6 @@ import headerLogo from "../assets/images/header-logo.svg";
 const Nav = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
 
-  console.log(openNavigation);
-
   const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false);
@@ -25,7 +23,7 @@ const Nav = () => {
 
     enablePageScroll();
     setOpenNavigation(false);
-  }
+  };
 
   return (
     <header className="padding-x py-8 absolute z-10 w-full">
@@ -39,16 +37,20 @@ const Nav = () => {
             alt="Logo"
           />
         </a>
-        <nav className={`${
+        <nav
+          className={`${
             openNavigation ? "flex" : "hidden"
-          } fixed z-50 top-20 left-0 right-0 bottom-0 bg-white lg:static lg:flex lg:mx-auto lg:bg-transparent`}>
+          } fixed z-50 top-20 left-0 right-0 bottom-0 bg-white lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+        >
           <ul className="w-full flex flex-col gap-9 items-center justify-center lg:flex-row">
             {navLinks.map((item) => (
               <li key={item.label}>
                 <a
                   onClick={handleClick}
                   href={item.href}
-                  className={`${openNavigation ? "font-bold uppercase" : ""} font-montserrat leading-normal hover:text-purple-500 text-lg text-slate-gray`}
+                  className={`${
+                    openNavigation ? "font-bold uppercase text-black" : ""
+                  } font-montserrat leading-normal hover:text-purple-500 text-lg text-slate-gray`}
                 >
                   {item.label}
                 </a>
@@ -64,7 +66,7 @@ const Nav = () => {
           onClick={toggleNavigation}
           className="ml-auto hidden max-lg:block border-2 border-purple-500 rounded p-2"
         >
-          <MenuSvg openNavigation={openNavigation}/>
+          <MenuSvg openNavigation={openNavigation} />
         </div>
       </div>
     </header>
