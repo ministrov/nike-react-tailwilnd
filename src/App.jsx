@@ -14,7 +14,7 @@ import Nav from "./components/Nav";
 const App = () => (
   <>
     <Nav />
-    <main className="relative">
+    <main>
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>

@@ -24,15 +24,6 @@ const MenuSvg = ({ openNavigation }) => {
         fill="black"
         transform={`rotate(${openNavigation ? "-45" : "0"})`}
       />
-      <rect
-        className="transition-all origin-center"
-        y={openNavigation ? "15" : "20"}
-        width="20"
-        height="2"
-        rx="1"
-        fill="black"
-        transform={`rotate(${openNavigation ? "-45" : "0"})`}
-      />
     </svg>
   );
 };
