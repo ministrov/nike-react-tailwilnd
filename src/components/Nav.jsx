@@ -58,7 +58,7 @@ const Nav = () => {
             ))}
           </ul>
 
-          <HamburgerMenu />
+          <HamburgerMenu/>
         </nav>
 
         <div
