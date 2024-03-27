@@ -13,7 +13,6 @@ function MyDisclosure() {
               Is team pricing available?
               <div className="flex flex-row-reverse h-6 w-6 max-sm:h-9 max-sm:w-2/5 text-purple-500">
                 {open ? <Minus/> : <Plus/>}
-                {/* <ChevronRightIcon className={open ? "rotate-90 transform" : ""} /> */}
               </div>
             </Disclosure.Button>
             <Disclosure.Panel className="text-gray-500 text-center info-text max-sm:info-text-sm">
@@ -31,7 +30,6 @@ function MyDisclosure() {
               How can I contact customer support?
               <div className="flex flex-row-reverse  h-6 w-6 max-sm:h-9 max-sm:w-2/5 text-purple-500">
                 {open ? <Minus/> : <Plus/>}
-                {/* <ChevronRightIcon className={open ? "rotate-90 transform" : ""} /> */}
               </div>
             </Disclosure.Button>
             <Disclosure.Panel className="text-gray-500 text-center info-text max-sm:info-text-sm">
@@ -48,7 +46,6 @@ function MyDisclosure() {
               What payment methods do you accept?
               <div className="flex flex-row-reverse  h-6 w-6 max-sm:h-9 max-sm:w-2/5 text-purple-500">
                 {open ? <Minus/> : <Plus/>}
-                {/* <ChevronRightIcon className={open ? "rotate-90 transform" : ""} /> */}
               </div>
             </Disclosure.Button>
             <Disclosure.Panel className="text-gray-500 text-center info-text max-sm:info-text-sm">
