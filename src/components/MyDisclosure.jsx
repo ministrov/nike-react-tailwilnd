@@ -1,16 +1,18 @@
 import { Disclosure } from "@headlessui/react";
-import { ChevronRightIcon } from "@heroicons/react/20/solid";
+// import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import Plus from "./design/Plus";
+import Minus from "./design/Minus";
 
 function MyDisclosure() {
   return (
-    <div className="flex flex-col gap-4 padding max-sm:p-0 max-sm:mt-6">
+    <div className="flex flex-col gap-4 padding-x max-sm:p-0 max-sm:mt-6">
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="flex justify-between max-h-20 py-2 px-3 info-text max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
+            <Disclosure.Button className="flex justify-between max-h-20 lg:min-h-20 py-2 px-3 info-text font-medium max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
               Is team pricing available?
               <div className="flex flex-row-reverse h-6 w-6 max-sm:h-9 max-sm:w-2/5 text-purple-500">
-                <ChevronRightIcon className={open ? "rotate-90 transform" : ""} />
+                {open ? <Minus/> : <Plus/>}
               </div>
             </Disclosure.Button>
             <Disclosure.Panel className="text-gray-500 text-center info-text max-sm:info-text-sm">
@@ -24,10 +26,10 @@ function MyDisclosure() {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="flex justify-between max-h-20 py-2 px-3 info-text max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
+            <Disclosure.Button className="flex justify-between max-h-20 lg:min-h-20 py-2 px-3 info-text font-medium max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
               How can I contact customer support?
               <div className="flex flex-row-reverse  h-6 w-6 max-sm:h-9 max-sm:w-2/5 text-purple-500">
-                <ChevronRightIcon className={open ? "rotate-90 transform" : ""} />
+                {open ? <Minus/> : <Plus/>}
               </div>
             </Disclosure.Button>
             <Disclosure.Panel className="text-gray-500 text-center info-text max-sm:info-text-sm">
@@ -40,10 +42,10 @@ function MyDisclosure() {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="flex justify-between max-h-20 py-2 px-3 info-text max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
+            <Disclosure.Button className="flex justify-between max-h-20 lg:min-h-20 py-2 px-3 info-text font-medium max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
               What payment methods do you accept?
               <div className="flex flex-row-reverse  h-6 w-6 max-sm:h-9 max-sm:w-2/5 text-purple-500">
-                <ChevronRightIcon className={open ? "rotate-90 transform" : ""} />
+                {open ? <Minus/> : <Plus/>}
               </div>
             </Disclosure.Button>
             <Disclosure.Panel className="text-gray-500 text-center info-text max-sm:info-text-sm">
