@@ -6,17 +6,8 @@ import { shoes, statistics } from "../constants";
 import { bigShoe1 } from "../assets/images";
 
 const Hero = () => {
-  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
+  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
-  // const newStatistics = statistics.every(stat => stat.label.length > 5);
-
-  // useEffect(() => {
-  //   console.log(typeof (5 + '5'));
-
-  //   console.log(newStatistics);
-  //   console.log(typeof newStatistics);
-  // }, [newStatistics])
-  
   return (
     <section
       id="home"

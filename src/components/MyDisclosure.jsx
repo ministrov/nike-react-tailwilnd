@@ -9,7 +9,7 @@ function MyDisclosure() {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="flex justify-between max-h-20 lg:min-h-20 py-2 px-3 info-text font-bold max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
+            <Disclosure.Button className="flex justify-between max-h-20 lg:min-h-20 py-2 px-3 info-text font-medium max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
               Is team pricing available?
               <div className="flex flex-row-reverse h-6 w-6 max-sm:h-9 max-sm:w-2/5 text-purple-500">
                 {open ? <Minus/> : <Plus/>}
@@ -26,7 +26,7 @@ function MyDisclosure() {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="flex justify-between max-h-20 lg:min-h-20 py-2 px-3 info-text font-bold max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
+            <Disclosure.Button className="flex justify-between max-h-20 lg:min-h-20 py-2 px-3 info-text font-medium max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
               How can I contact customer support?
               <div className="flex flex-row-reverse  h-6 w-6 max-sm:h-9 max-sm:w-2/5 text-purple-500">
                 {open ? <Minus/> : <Plus/>}
@@ -42,7 +42,7 @@ function MyDisclosure() {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="flex justify-between max-h-20 lg:min-h-20 py-2 px-3 info-text font-bold max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
+            <Disclosure.Button className="flex justify-between max-h-20 lg:min-h-20 py-2 px-3 info-text font-medium max-sm:info-text-sm cursor-pointer bg-neutral-200 rounded">
               What payment methods do you accept?
               <div className="flex flex-row-reverse  h-6 w-6 max-sm:h-9 max-sm:w-2/5 text-purple-500">
                 {open ? <Minus/> : <Plus/>}
