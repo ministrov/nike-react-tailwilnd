@@ -61,6 +61,11 @@ const Nav = () => {
           <HamburgerMenu/>
         </nav>
 
+        <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat hover:text-purple-500 text-slate-gray max-lg:hidden wide:mr-24'>
+          <span>/</span>
+          <a href='/'>Sign in</a>
+        </div>
+
         <div
           role="button"
           onClick={toggleNavigation}
