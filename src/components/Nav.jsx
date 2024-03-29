@@ -67,7 +67,7 @@ const Nav = () => {
           <a href="/">Sign in</a>
         </div>
 
-        <div className="flex gap-1 sm:gap-4">
+        <div className="flex items-center gap-1 sm:gap-4">
           <div className="flex items-center justify-center p-1 border-purple-500 rounded-full border-2">
             <ToggleButton />
           </div>
@@ -75,7 +75,7 @@ const Nav = () => {
           <div
             role="button"
             onClick={toggleNavigation}
-            className="hidden max-lg:block border-2 border-purple-500 rounded p-2"
+            className="hidden max-lg:block max-h-8 border-2 border-purple-500 rounded p-2"
           >
             <MenuSvg openNavigation={openNavigation} />
           </div>

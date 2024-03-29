@@ -1,17 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Moon from "./design/Moon";
 import Sun from "./design/Sun";
 
 const DarkThemeToggler = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [theme, setTheme] = useState(null);
 
-  const handleToggle = () => {
-    setIsDarkMode(!isDarkMode);
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      console.log('Helll');
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+    
+  }, []);
+
+  const handleThemeSwitch = () => {
+    setTheme((currentValue) => !currentValue);
   };
 
   return (
-    <button id="toggleDark" onClick={handleToggle}>
-      {isDarkMode ? <Moon /> : <Sun />}
+    <button onClick={handleThemeSwitch}>
+      {theme === "dark" ? <Moon /> : <Sun />}
     </button>
   );
 };
