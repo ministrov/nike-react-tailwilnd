@@ -4,6 +4,7 @@ import MenuSvg from "./design/MenuSvg";
 import { HamburgerMenu } from "./design/HamburgerMenu";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import headerLogo from "../assets/images/header-logo.svg";
+import ToggleButton from "./DarkThemeToggler";
 
 const Nav = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -27,8 +28,8 @@ const Nav = () => {
 
   return (
     <header className="padding-x py-8 absolute z-10 w-full">
-      <div className="flex justify-between max-container">
-        <a href="/">
+      <div className="flex justify-between max-container xl:pr-12">
+        <a href="/" className="flex items-center justify-center">
           <img
             src={headerLogo}
             className="ring-purple-500"
@@ -58,20 +59,26 @@ const Nav = () => {
             ))}
           </ul>
 
-          <HamburgerMenu/>
+          <HamburgerMenu />
         </nav>
 
-        <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat hover:text-purple-500 text-slate-gray max-lg:hidden wide:mr-24'>
+        <div className="flex items-center justify-center gap-2 text-lg leading-normal font-medium font-montserrat hover:text-purple-500 text-slate-gray max-lg:hidden lg:mr-6 wide:mr-24">
           <span>/</span>
-          <a href='/'>Sign in</a>
+          <a href="/">Sign in</a>
         </div>
 
-        <div
-          role="button"
-          onClick={toggleNavigation}
-          className="ml-auto hidden max-lg:block border-2 border-purple-500 rounded p-2"
-        >
-          <MenuSvg openNavigation={openNavigation} />
+        <div className="flex gap-1 sm:gap-4">
+          <div className="flex items-center justify-center p-1 border-purple-500 rounded-full border-2">
+            <ToggleButton />
+          </div>
+
+          <div
+            role="button"
+            onClick={toggleNavigation}
+            className="hidden max-lg:block border-2 border-purple-500 rounded p-2"
+          >
+            <MenuSvg openNavigation={openNavigation} />
+          </div>
         </div>
       </div>
     </header>
