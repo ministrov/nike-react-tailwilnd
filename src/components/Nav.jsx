@@ -27,7 +27,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="padding-x fixed top-0 z-40 w-full bg-white py-5 shadow-sm dark:bg-slate-950 md:absolute md:bg-transparent md:shadow-none">
       <div className="flex justify-between max-container xl:pr-12">
         <a href="/" className="flex items-center justify-center">
           <img
@@ -41,7 +41,7 @@ const Nav = () => {
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
-          } fixed z-50 top-20 left-0 right-0 bottom-0 bg-white lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+          } fixed z-50 top-[84px] left-0 right-0 bottom-0 bg-white lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <ul className="w-full flex flex-col gap-9 items-center justify-center lg:flex-row">
             {navLinks.map((item) => (

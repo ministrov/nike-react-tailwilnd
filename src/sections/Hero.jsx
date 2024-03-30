@@ -55,7 +55,7 @@ const Hero = () => {
                 changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
                 bigShoeImg={bigShoeImg}
               />
-              {console.log(index)}
+              {/* {console.log(index)} */}
             </div>
           ))}
         </div>

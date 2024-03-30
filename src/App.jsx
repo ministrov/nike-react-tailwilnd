@@ -12,7 +12,7 @@ import {
 import Nav from "./components/Nav";
 
 const App = () => (
-  <main className="relative dark:bg-slate-900">
+  <main className="relative bg-white dark:bg-slate-900">
     <Nav />
     <section className="xl:padding-l wide:padding-r padding-b">
       <Hero />
