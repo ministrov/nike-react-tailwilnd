@@ -62,13 +62,13 @@ const Nav = () => {
           <HamburgerMenu />
         </nav>
 
-        <div className="flex items-center justify-center gap-2 text-lg leading-normal font-medium font-montserrat hover:text-purple-500 text-slate-gray max-lg:hidden lg:mr-6 wide:mr-24">
+        <div role="link" className="flex items-center justify-center gap-2 text-lg leading-normal font-medium font-montserrat hover:text-purple-500 text-slate-gray max-lg:hidden lg:mr-6 wide:mr-24">
           <span>/</span>
           <a href="/">Sign in</a>
         </div>
 
         <div className="flex items-center gap-1 sm:gap-4">
-          <div className="flex items-center justify-center p-1 border-purple-500 rounded-full border-2">
+          <div role="button" className="flex items-center justify-center p-1 border-purple-500 rounded-full border-2">
             <ToggleButton />
           </div>
 
