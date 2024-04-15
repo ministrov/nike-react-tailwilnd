@@ -41,7 +41,7 @@ const Nav = () => {
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
-          } fixed z-50 top-[84px] left-0 right-0 bottom-0 bg-white lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+          } fixed z-50 top-[86px] left-0 right-0 bottom-0 bg-white lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <ul className="w-full flex flex-col gap-9 items-center justify-center lg:flex-row">
             {navLinks.map((item) => (
